@@ -1,0 +1,191 @@
+# Vinit Wadgaonkar - AI/LLM Bio Page Development Rules
+
+## 🎯 Project Mission
+Build a **gaandphad** bio page that screams "This guy knows LLMs, safety, and infra. No BS." to AI/LLM researchers and recruiters.
+
+## 🎨 Design Philosophy
+
+### Visual Identity
+- **Dark theme only** - Deep background (#0b0b0f), accent purple/blue (#a3a3ff)
+- **Geometric, deterministic** - No AI art, no stock photos, no lorem ipsum
+- **Minimal, professional** - Clean typography, plenty of whitespace
+- **Mobile-first** - Responsive design that works on all devices
+
+### Typography
+- **Strong, sans-serif** - Modern, readable fonts
+- **Hierarchy matters** - Clear visual hierarchy with proper heading structure
+- **No decorative fonts** - Keep it professional and accessible
+
+## 📝 Content Guidelines
+
+### Writing Style
+- **Impact-first** - Lead with metrics and measurable results
+- **No buzzword salad** - Avoid "passionate", "innovative", "cutting-edge", "revolutionary"
+- **Specific achievements** - "+45% accuracy", "−60% response time", "12+ languages"
+- **Technical depth** - Show understanding of the problems, not just solutions
+
+### Good vs Bad Copy Examples
+
+❌ **Bad**: "Passionate about AI and machine learning with experience in various cutting-edge technologies"
+
+✅ **Good**: "Developed adversarial robustness frameworks, improving classifier accuracy by +45%"
+
+❌ **Bad**: "Innovative solutions for scalable AI infrastructure"
+
+✅ **Good**: "Built automated security scanning pipelines reducing vulnerabilities by −35%"
+
+## 🛠️ Technical Standards
+
+### Code Quality
+- **Semantic HTML** - Use proper heading hierarchy, landmarks, ARIA labels
+- **Accessibility first** - WCAG 2.1 AA compliance, keyboard navigation, screen reader support
+- **Performance optimized** - < 50KB bundle, < 2s load time, 95+ Lighthouse score
+- **No external dependencies** - Vanilla JavaScript, Tailwind CDN only
+
+### File Organization
+- **Single responsibility** - Each file has one clear purpose
+- **Consistent naming** - kebab-case for files, camelCase for variables
+- **Clear structure** - Logical file organization, easy to navigate
+
+## 🎯 Target Audience
+
+### Primary Users
+- **AI/LLM researchers** - Need to see technical depth and research quality
+- **Recruiters** - Want to quickly assess fit and experience
+- **Engineering managers** - Looking for problem-solving skills and impact
+- **Academic collaborators** - Evaluating research potential and expertise
+
+### User Goals
+- **Quick assessment** - Understand expertise in under 10 seconds
+- **Technical validation** - Verify depth of knowledge and experience
+- **Contact information** - Easy access to GitHub, LinkedIn, email
+- **Research fit** - Determine alignment with their needs
+
+## 🚫 What NOT to Do
+
+### Content
+- **No placeholder text** - Every word should be intentional and real
+- **No generic statements** - Avoid "I love technology" or "I'm a team player"
+- **No buzzwords** - Skip "passionate", "innovative", "revolutionary", "cutting-edge"
+- **No AI-generated content** - All content should be human-written and specific
+
+### Design
+- **No AI art** - Use deterministic SVG generation only
+- **No stock photos** - Geometric patterns and custom graphics only
+- **No excessive animations** - Keep it subtle and professional
+- **No dark patterns** - No misleading UI elements or hidden content
+
+### Technical
+- **No frameworks** - Vanilla JavaScript, Tailwind CDN only
+- **No external APIs** - Self-contained, no external dependencies
+- **No blocking scripts** - All JavaScript should be non-blocking
+- **No accessibility violations** - WCAG 2.1 AA compliance required
+
+## ✅ What TO Do
+
+### Content
+- **Lead with metrics** - Start with quantifiable achievements
+- **Show technical depth** - Demonstrate understanding of complex problems
+- **Be specific** - Use concrete examples and real projects
+- **Update regularly** - Keep content current and relevant
+
+### Design
+- **Use geometric patterns** - Deterministic SVG generation based on name
+- **Maintain consistency** - Consistent color scheme and typography
+- **Optimize for speed** - Fast loading, smooth interactions
+- **Test thoroughly** - Cross-browser, cross-device testing
+
+### Technical
+- **Follow web standards** - Semantic HTML, modern CSS, ES6+ JavaScript
+- **Optimize performance** - Minimize bundle size, optimize images
+- **Ensure accessibility** - Keyboard navigation, screen reader support
+- **Document everything** - Clear README, inline comments, code documentation
+
+## 🎨 Visual Guidelines
+
+### Color Palette
+- **Primary background**: #0b0b0f (dark-bg)
+- **Accent color**: #a3a3ff (purple-blue)
+- **Secondary accent**: #6366f1 (indigo)
+- **Text colors**: #ffffff (primary), #d1d5db (secondary), #9ca3af (tertiary)
+
+### Spacing
+- **Consistent rhythm** - Use Tailwind's spacing scale
+- **Generous whitespace** - Don't cram content together
+- **Visual hierarchy** - Use spacing to create clear content sections
+
+### Typography
+- **Headings**: Bold, clear hierarchy (h1 > h2 > h3)
+- **Body text**: Readable line height, appropriate font size
+- **Links**: Clear hover states, accessible focus indicators
+
+## 📊 Performance Targets
+
+### Core Web Vitals
+- **LCP**: < 2.5s (Largest Contentful Paint)
+- **FID**: < 100ms (First Input Delay)
+- **CLS**: < 0.1 (Cumulative Layout Shift)
+
+### Lighthouse Scores
+- **Performance**: 95+
+- **Accessibility**: 95+
+- **Best Practices**: 95+
+- **SEO**: 95+
+
+### Bundle Size
+- **Total size**: < 50KB
+- **JavaScript**: < 20KB
+- **CSS**: < 10KB
+- **Images**: < 20KB
+
+## 🔧 Development Workflow
+
+### Before Making Changes
+1. **Read the requirements** - Understand what needs to be built
+2. **Check existing code** - Don't duplicate functionality
+3. **Plan the approach** - Think through the solution before coding
+4. **Consider performance** - Will this change affect load times?
+
+### During Development
+1. **Write semantic HTML** - Use proper elements and attributes
+2. **Style with purpose** - Every CSS rule should have a reason
+3. **Test as you go** - Check in multiple browsers and devices
+4. **Keep it simple** - Don't over-engineer solutions
+
+### After Making Changes
+1. **Test thoroughly** - Cross-browser, cross-device testing
+2. **Check performance** - Run Lighthouse audit
+3. **Validate accessibility** - Use screen reader, keyboard navigation
+4. **Update documentation** - Keep README and comments current
+
+## 🎯 Success Metrics
+
+### User Experience
+- **Time to understand**: < 10 seconds to grasp expertise
+- **Contact conversion**: Easy access to GitHub, LinkedIn, email
+- **Technical validation**: Clear demonstration of skills and experience
+- **Professional impression**: Clean, modern, trustworthy design
+
+### Technical Performance
+- **Load speed**: < 2 seconds on 3G connection
+- **Accessibility**: WCAG 2.1 AA compliant
+- **SEO**: Rich snippets, proper meta tags, structured data
+- **Maintainability**: Clean, documented, easy to update code
+
+## 🚀 Deployment
+
+### GitHub Pages
+- **Automated deployment** - Push to main branch triggers build
+- **Asset generation** - Hero SVG generated during build process
+- **Validation** - HTML validation and performance checks
+- **Rollback capability** - Easy to revert if issues arise
+
+### Local Development
+- **Simple setup** - Just open index.html or use local server
+- **Asset generation** - Run `node scripts/generate-hero.js` for new SVG
+- **Live reload** - Use browser dev tools for real-time updates
+- **Performance testing** - Lighthouse audit in dev tools
+
+---
+
+**Remember**: This page represents Vinit Wadgaonkar to the AI/LLM research community. Every decision should reinforce the message: "This guy knows his stuff. No BS."

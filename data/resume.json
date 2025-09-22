@@ -1,0 +1,171 @@
+{
+  "personal": {
+    "name": "Vinit Wadgaonkar",
+    "title": "AI/LLM Safety Researcher",
+    "email": "vinitwadgaonkar@buffalo.edu",
+    "location": "Buffalo, NY",
+    "website": "https://vinitwadgaonkar.github.io/vinit-llm-bio/",
+    "github": "https://github.com/vinitwadgaonkar",
+    "linkedin": "https://linkedin.com/in/vinitwadgaonkar",
+    "tagline": "LLMs • Multilingual Safety • Adversarial Robustness"
+  },
+  "focusAreas": [
+    {
+      "title": "LLM Evaluation",
+      "description": "Robust testing frameworks for multilingual toxicity detection and adversarial prompt generation."
+    },
+    {
+      "title": "Adversarial Prompting", 
+      "description": "Code-switching techniques to bypass safety filters while maintaining semantic coherence."
+    },
+    {
+      "title": "AI Safety",
+      "description": "Defensive mechanisms against prompt injection and alignment research for secure AI deployment."
+    },
+    {
+      "title": "Infrastructure",
+      "description": "Secure AI model deployment, monitoring, and scalable evaluation pipelines."
+    }
+  ],
+  "experience": [
+    {
+      "title": "Research Assistant",
+      "company": "SUNY Buffalo",
+      "location": "Buffalo, NY",
+      "startDate": "2023",
+      "endDate": "Present",
+      "description": "Conducting research in AI safety, adversarial robustness, and multilingual toxicity detection.",
+      "achievements": [
+        "Developed adversarial robustness frameworks, improving classifier accuracy by +45%",
+        "Built multilingual toxicity detection systems with −60% response time optimization", 
+        "Published IEEE CAI 2025 paper on code-switching adversarial prompt generation",
+        "Implemented real-time inference optimization for production AI systems"
+      ],
+      "technologies": ["Python", "PyTorch", "Transformers", "Hugging Face", "CUDA", "Docker", "Kubernetes"]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "LCEPL",
+      "location": "Pune, India", 
+      "startDate": "2022",
+      "endDate": "2023",
+      "description": "Developed security-focused software solutions and established DevOps practices.",
+      "achievements": [
+        "Implemented GAN-based malware detection with +30% accuracy improvement",
+        "Established SecDevOps practices reducing vulnerabilities by −35%",
+        "Built automated security scanning pipelines for CI/CD integration",
+        "Designed scalable microservices architecture for threat detection"
+      ],
+      "technologies": ["Python", "TensorFlow", "Docker", "Kubernetes", "AWS", "Jenkins", "GitLab CI"]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Multilingual Code-Switching Adversarial Toxicity Prompt Generator",
+      "venue": "IEEE CAI 2025",
+      "year": "2025",
+      "description": "Novel approach using code-switching to generate adversarial prompts that bypass safety filters while maintaining semantic coherence across multiple languages.",
+      "authors": ["Vinit Wadgaonkar", "Co-authors"],
+      "status": "Accepted",
+      "impact": "First systematic study of code-switching for adversarial prompt generation in multilingual contexts"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Robust Multilingual Toxicity Detection Framework",
+      "description": "End-to-end pipeline for detecting toxic content across 12+ languages with adversarial robustness testing and real-time inference optimization.",
+      "technologies": ["Python", "PyTorch", "Transformers", "FastAPI", "Docker"],
+      "metrics": ["12+ languages supported", "95%+ accuracy", "Sub-100ms inference time"],
+      "github": "https://github.com/vinitwadgaonkar/multilingual-toxicity-detection"
+    },
+    {
+      "title": "Secure AI Model Deployment Infrastructure", 
+      "description": "Containerized deployment system with automated security scanning, model versioning, and monitoring for production AI applications.",
+      "technologies": ["Kubernetes", "Docker", "Prometheus", "Grafana", "Helm"],
+      "metrics": ["99.9% uptime", "Zero-downtime deployments", "Real-time monitoring"],
+      "github": "https://github.com/vinitwadgaonkar/secure-ai-deployment"
+    },
+    {
+      "title": "Adversarial Prompt Generation Toolkit",
+      "description": "Comprehensive toolkit for generating and testing adversarial prompts against LLM safety filters with evaluation metrics.",
+      "technologies": ["Python", "OpenAI API", "LangChain", "Streamlit"],
+      "metrics": ["50+ attack methods", "Multi-model support", "Automated evaluation"],
+      "github": "https://github.com/vinitwadgaonkar/adversarial-prompt-toolkit"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "SUNY Buffalo",
+      "location": "Buffalo, NY",
+      "startDate": "2023",
+      "endDate": "2025",
+      "gpa": "3.67/4.0",
+      "relevantCoursework": [
+        "Machine Learning",
+        "Natural Language Processing", 
+        "Computer Security",
+        "Advanced Algorithms",
+        "Distributed Systems"
+      ],
+      "thesis": "Adversarial Robustness in Multilingual Language Models"
+    },
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "institution": "Pune University", 
+      "location": "Pune, India",
+      "startDate": "2019",
+      "endDate": "2023",
+      "gpa": "9.2/10",
+      "relevantCoursework": [
+        "Data Structures and Algorithms",
+        "Database Systems",
+        "Software Engineering",
+        "Computer Networks",
+        "Operating Systems"
+      ],
+      "thesis": "Secure Software Development Practices"
+    }
+  ],
+  "skills": {
+    "programming": ["Python", "JavaScript", "TypeScript", "C++", "Java", "Go"],
+    "frameworks": ["PyTorch", "TensorFlow", "Transformers", "FastAPI", "React", "Node.js"],
+    "tools": ["Docker", "Kubernetes", "AWS", "Git", "Jenkins", "Prometheus", "Grafana"],
+    "languages": ["English (Native)", "Hindi (Native)", "Marathi (Native)"],
+    "research": ["Adversarial ML", "NLP", "AI Safety", "Multilingual Processing", "Model Evaluation"]
+  },
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "date": "2023"
+    },
+    {
+      "name": "Certified Kubernetes Administrator",
+      "issuer": "Cloud Native Computing Foundation", 
+      "date": "2023"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Research Paper Award",
+      "organization": "IEEE CAI 2025",
+      "date": "2025",
+      "description": "Recognition for outstanding contribution to adversarial AI research"
+    },
+    {
+      "title": "Academic Excellence Scholarship",
+      "organization": "SUNY Buffalo",
+      "date": "2023-2025",
+      "description": "Merit-based scholarship for graduate studies"
+    }
+  ],
+  "interests": [
+    "AI Safety Research",
+    "Open Source Contribution", 
+    "Technical Writing",
+    "Mentoring",
+    "Hiking",
+    "Photography"
+  ]
+}
