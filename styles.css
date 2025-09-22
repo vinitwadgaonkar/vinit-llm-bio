@@ -10,17 +10,37 @@ body {
     background-attachment: fixed;
 }
 
-/* Performance optimizations */
+/* GOD-LEVEL Performance optimizations */
 * {
     will-change: auto;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .focus-card, .section-title, h1, h2, h3 {
     will-change: transform, opacity;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
-#three-canvas {
+#llm-canvas, #network-canvas {
     will-change: transform;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+/* Smooth scrolling without flicker */
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 /* Cyberpunk glow effects */
@@ -132,13 +152,16 @@ html {
     background: linear-gradient(135deg, rgba(163, 163, 255, 0.1), rgba(99, 102, 241, 0.1));
 }
 
-/* Cyberpunk focus cards */
+/* GOD-LEVEL Cyberpunk focus cards */
 .focus-card {
     position: relative;
     background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(22, 33, 62, 0.8));
     backdrop-filter: blur(10px);
     border: 1px solid rgba(163, 163, 255, 0.3);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform, opacity;
 }
 
 .focus-card::after {
@@ -473,18 +496,27 @@ h1, h2, h3 {
     100% { left: 100%; }
 }
 
-/* Performance optimizations for mobile */
+/* GOD-LEVEL Performance optimizations for mobile */
 @media (max-width: 768px) {
     .focus-card:hover {
-        transform: translateY(-5px) scale(1.01);
+        transform: translateY(-5px) scale(1.01) translateZ(0);
     }
     
-    #three-canvas {
+    #llm-canvas {
         display: none; /* Hide 3D on mobile for performance */
     }
     
     .particle {
         display: none; /* Hide particles on mobile */
+    }
+    
+    /* Reduce animations on mobile */
+    .focus-card {
+        transition: all 0.2s ease;
+    }
+    
+    h1, h2, h3 {
+        animation: none; /* Disable gradient animation on mobile */
     }
 }
 

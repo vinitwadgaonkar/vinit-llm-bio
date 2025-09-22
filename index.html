@@ -45,18 +45,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
+    <!-- Custom WebGL Shaders -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/ShaderPass.js"></script>
+    
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-dark-bg text-white min-h-screen overflow-x-hidden">
-    <!-- 3D Background Canvas -->
-    <canvas id="three-canvas" class="fixed inset-0 w-full h-full z-0"></canvas>
+    <!-- LLM Neural Network Visualization -->
+    <canvas id="llm-canvas" class="fixed inset-0 w-full h-full z-0"></canvas>
     
-    <!-- Particle System -->
-    <div id="particles" class="fixed inset-0 w-full h-full z-10 pointer-events-none"></div>
+    <!-- RL Evaluation Metrics -->
+    <div id="rl-metrics" class="fixed top-4 right-4 z-30 bg-black/50 backdrop-blur-sm rounded-lg p-4 text-sm font-mono">
+        <div class="text-accent mb-2">RL Evaluation Metrics</div>
+        <div id="reward-score" class="text-green-400">Reward: <span class="metric-value">0.847</span></div>
+        <div id="policy-loss" class="text-blue-400">Policy Loss: <span class="metric-value">0.023</span></div>
+        <div id="value-loss" class="text-purple-400">Value Loss: <span class="metric-value">0.156</span></div>
+        <div id="entropy" class="text-yellow-400">Entropy: <span class="metric-value">0.892</span></div>
+    </div>
     
-    <!-- Glitch Overlay -->
-    <div id="glitch-overlay" class="fixed inset-0 w-full h-full z-50 pointer-events-none opacity-0"></div>
+    <!-- LLM Token Generation -->
+    <div id="token-generator" class="fixed bottom-4 left-4 z-30 bg-black/50 backdrop-blur-sm rounded-lg p-4 text-sm font-mono max-w-md">
+        <div class="text-accent mb-2">LLM Token Generation</div>
+        <div id="generated-text" class="text-white leading-relaxed"></div>
+        <div class="text-gray-400 mt-2 text-xs">Tokens/sec: <span id="tokens-per-sec">0</span></div>
+    </div>
     
     <!-- Main Content -->
     <div class="relative z-20">
@@ -73,11 +89,12 @@
                 </div>
             </div>
             <div class="w-full md:w-96 relative">
-                <div id="hero-3d" class="w-full h-64 md:h-80 relative">
-                    <!-- 3D Hero will be rendered here -->
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="text-6xl font-bold text-accent opacity-20 animate-pulse">V</div>
+                <div id="neural-network-viz" class="w-full h-64 md:h-80 relative bg-black/20 rounded-lg border border-accent/30">
+                    <!-- Neural Network Visualization -->
+                    <canvas id="network-canvas" class="w-full h-full rounded-lg"></canvas>
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div class="text-2xl font-bold text-accent/30">Neural Network</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -209,7 +226,8 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
-    <script src="three-scene.js"></script>
-    <script src="animations.js"></script>
+    <script src="llm-visualization.js"></script>
+    <script src="rl-evaluation.js"></script>
+    <script src="performance-animations.js"></script>
 </body>
 </html>
