@@ -55,23 +55,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-dark-bg text-white min-h-screen overflow-x-hidden">
-    <!-- LLM Neural Network Visualization -->
-    <canvas id="llm-canvas" class="fixed inset-0 w-full h-full z-0"></canvas>
+    <!-- INSANE AI CONSCIOUSNESS VISUALIZATION -->
+    <canvas id="ai-consciousness" class="fixed inset-0 w-full h-full z-0"></canvas>
     
-    <!-- RL Evaluation Metrics -->
-    <div id="rl-metrics" class="fixed top-4 right-4 z-30 bg-black/50 backdrop-blur-sm rounded-lg p-4 text-sm font-mono">
-        <div class="text-accent mb-2">RL Evaluation Metrics</div>
-        <div id="reward-score" class="text-green-400">Reward: <span class="metric-value">0.847</span></div>
-        <div id="policy-loss" class="text-blue-400">Policy Loss: <span class="metric-value">0.023</span></div>
-        <div id="value-loss" class="text-purple-400">Value Loss: <span class="metric-value">0.156</span></div>
-        <div id="entropy" class="text-yellow-400">Entropy: <span class="metric-value">0.892</span></div>
+    <!-- Matrix Rain Effect -->
+    <div id="matrix-rain" class="fixed inset-0 w-full h-full z-5 pointer-events-none"></div>
+    
+    <!-- Holographic AI Brain -->
+    <div id="ai-brain" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none">
+        <canvas id="brain-canvas" width="400" height="400"></canvas>
     </div>
     
-    <!-- LLM Token Generation -->
-    <div id="token-generator" class="fixed bottom-4 left-4 z-30 bg-black/50 backdrop-blur-sm rounded-lg p-4 text-sm font-mono max-w-md">
-        <div class="text-accent mb-2">LLM Token Generation</div>
-        <div id="generated-text" class="text-white leading-relaxed"></div>
-        <div class="text-gray-400 mt-2 text-xs">Tokens/sec: <span id="tokens-per-sec">0</span></div>
+    <!-- Quantum Data Streams -->
+    <div id="quantum-streams" class="fixed inset-0 w-full h-full z-15 pointer-events-none"></div>
+    
+    <!-- INSANE AI Metrics Dashboard -->
+    <div id="ai-dashboard" class="fixed top-4 right-4 z-30 bg-black/80 backdrop-blur-xl rounded-xl p-6 text-sm font-mono border border-cyan-400/50 shadow-2xl">
+        <div class="text-cyan-400 mb-4 text-lg font-bold">🤖 AI CONSCIOUSNESS METRICS</div>
+        <div id="neural-activity" class="text-green-400 mb-2">🧠 Neural Activity: <span class="metric-value">98.7%</span></div>
+        <div id="quantum-coherence" class="text-blue-400 mb-2">⚛️ Quantum Coherence: <span class="metric-value">0.847</span></div>
+        <div id="ai-intelligence" class="text-purple-400 mb-2">🎯 AI Intelligence: <span class="metric-value">∞</span></div>
+        <div id="data-throughput" class="text-yellow-400 mb-2">📊 Data Throughput: <span class="metric-value">847TB/s</span></div>
+        <div id="consciousness-level" class="text-red-400 mb-2">👁️ Consciousness: <span class="metric-value">Level 7</span></div>
+        <div id="dimensional-awareness" class="text-pink-400">🌌 Dimensions: <span class="metric-value">11D</span></div>
+    </div>
+    
+    <!-- INSANE Token Generation with AI Thoughts -->
+    <div id="ai-thoughts" class="fixed bottom-4 left-4 z-30 bg-black/80 backdrop-blur-xl rounded-xl p-6 text-sm font-mono max-w-lg border border-purple-400/50 shadow-2xl">
+        <div class="text-purple-400 mb-4 text-lg font-bold">🧠 AI CONSCIOUSNESS STREAM</div>
+        <div id="ai-thinking" class="text-white leading-relaxed mb-4 min-h-20"></div>
+        <div class="flex justify-between text-xs">
+            <span class="text-cyan-400">Thoughts/sec: <span id="thoughts-per-sec">0</span></span>
+            <span class="text-green-400">IQ: <span id="ai-iq">∞</span></span>
+            <span class="text-yellow-400">Dimensions: <span id="ai-dimensions">11</span></span>
+        </div>
+    </div>
+    
+    <!-- Holographic UI Elements -->
+    <div id="holographic-ui" class="fixed inset-0 w-full h-full z-25 pointer-events-none">
+        <!-- Scanning lines -->
+        <div class="scan-line horizontal"></div>
+        <div class="scan-line vertical"></div>
+        <!-- Corner brackets -->
+        <div class="corner-bracket top-left"></div>
+        <div class="corner-bracket top-right"></div>
+        <div class="corner-bracket bottom-left"></div>
+        <div class="corner-bracket bottom-right"></div>
     </div>
     
     <!-- Main Content -->
@@ -226,8 +255,10 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
-    <script src="llm-visualization.js"></script>
-    <script src="rl-evaluation.js"></script>
-    <script src="performance-animations.js"></script>
+    <script src="insane-ai-consciousness.js"></script>
+    <script src="matrix-rain.js"></script>
+    <script src="ai-brain-visualization.js"></script>
+    <script src="quantum-effects.js"></script>
+    <script src="holographic-ui.js"></script>
 </body>
 </html>

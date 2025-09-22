@@ -10,13 +10,35 @@ body {
     background-attachment: fixed;
 }
 
-/* GOD-LEVEL Performance optimizations */
+/* INSANE GOD-LEVEL Performance optimizations */
 * {
     will-change: auto;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+}
+
+/* INSANE Holographic Effects */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 255, 0, 0.05) 0%, transparent 50%);
+    z-index: -1;
+    pointer-events: none;
+    animation: holographic-bg 10s ease-in-out infinite;
+}
+
+@keyframes holographic-bg {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
 }
 
 .focus-card, .section-title, h1, h2, h3 {
@@ -152,7 +174,7 @@ html {
     background: linear-gradient(135deg, rgba(163, 163, 255, 0.1), rgba(99, 102, 241, 0.1));
 }
 
-/* GOD-LEVEL Cyberpunk focus cards */
+/* INSANE GOD-LEVEL Cyberpunk focus cards */
 .focus-card {
     position: relative;
     background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(22, 33, 62, 0.8));
@@ -162,6 +184,23 @@ html {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
     will-change: transform, opacity;
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.2),
+        inset 0 0 20px rgba(255, 0, 255, 0.1);
+    animation: card-holographic 3s ease-in-out infinite;
+}
+
+@keyframes card-holographic {
+    0%, 100% { 
+        box-shadow: 
+            0 0 20px rgba(0, 255, 255, 0.2),
+            inset 0 0 20px rgba(255, 0, 255, 0.1);
+    }
+    50% { 
+        box-shadow: 
+            0 0 40px rgba(0, 255, 255, 0.4),
+            inset 0 0 40px rgba(255, 0, 255, 0.2);
+    }
 }
 
 .focus-card::after {

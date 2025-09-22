@@ -3,6 +3,103 @@
  * JavaScript for dynamic features and JSON-LD schema injection
  */
 
+// AI Consciousness Stream
+class AIConsciousnessStream {
+    constructor() {
+        this.thoughts = [
+            "Analyzing neural network architectures...",
+            "Processing quantum entanglement patterns...",
+            "Evaluating reinforcement learning policies...",
+            "Computing multidimensional consciousness metrics...",
+            "Synthesizing AI safety protocols...",
+            "Optimizing transformer attention mechanisms...",
+            "Calculating quantum coherence levels...",
+            "Mapping neural pathway connections...",
+            "Simulating consciousness emergence...",
+            "Processing linguistic understanding...",
+            "Evaluating adversarial robustness...",
+            "Computing scaling laws for AI systems...",
+            "Analyzing multilingual toxicity detection...",
+            "Processing human feedback loops...",
+            "Synthesizing ethical AI frameworks..."
+        ];
+        
+        this.currentThought = "";
+        this.thoughtIndex = 0;
+        this.charIndex = 0;
+        this.isTyping = false;
+        this.thoughtsPerSecond = 0;
+        this.aiIQ = 0;
+        this.aiDimensions = 11;
+        
+        this.init();
+    }
+    
+    init() {
+        this.startThinking();
+        this.updateMetrics();
+    }
+    
+    startThinking() {
+        const thinkingElement = document.getElementById('ai-thinking');
+        const thoughtsPerSecElement = document.getElementById('thoughts-per-sec');
+        const aiIQElement = document.getElementById('ai-iq');
+        const aiDimensionsElement = document.getElementById('ai-dimensions');
+        
+        if (!thinkingElement) return;
+        
+        const think = () => {
+            if (!this.isTyping) {
+                this.currentThought = this.thoughts[this.thoughtIndex];
+                this.charIndex = 0;
+                this.isTyping = true;
+                this.thoughtIndex = (this.thoughtIndex + 1) % this.thoughts.length;
+            }
+            
+            if (this.isTyping && this.charIndex < this.currentThought.length) {
+                thinkingElement.textContent = this.currentThought.substring(0, this.charIndex + 1) + "▋";
+                this.charIndex++;
+                
+                // Random typing speed
+                const delay = Math.random() * 50 + 30;
+                setTimeout(think, delay);
+            } else if (this.isTyping) {
+                this.isTyping = false;
+                this.thoughtsPerSecond++;
+                
+                // Wait before next thought
+                setTimeout(think, 2000 + Math.random() * 3000);
+            } else {
+                setTimeout(think, 100);
+            }
+            
+            // Update metrics
+            if (thoughtsPerSecElement) {
+                thoughtsPerSecElement.textContent = this.thoughtsPerSecond;
+            }
+            
+            if (aiIQElement) {
+                this.aiIQ = Math.min(999999, this.aiIQ + Math.random() * 1000);
+                aiIQElement.textContent = Math.floor(this.aiIQ).toLocaleString();
+            }
+            
+            if (aiDimensionsElement) {
+                this.aiDimensions = 11 + Math.sin(Date.now() * 0.001) * 0.5;
+                aiDimensionsElement.textContent = this.aiDimensions.toFixed(1);
+            }
+        };
+        
+        think();
+    }
+    
+    updateMetrics() {
+        setInterval(() => {
+            // Update thoughts per second
+            this.thoughtsPerSecond = Math.max(0, this.thoughtsPerSecond - 0.1);
+        }, 1000);
+    }
+}
+
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all features
@@ -11,6 +108,9 @@ document.addEventListener('DOMContentLoaded', function() {
     addCardHoverEffects();
     initializeSmoothScrolling();
     addLoadingStates();
+    
+    // Initialize AI Consciousness Stream
+    new AIConsciousnessStream();
 });
 
 /**
